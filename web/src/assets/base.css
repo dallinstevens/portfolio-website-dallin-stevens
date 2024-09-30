@@ -36,7 +36,8 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* TODO: Change this to a button to change between light/dark? */
+@media (prefers-color-scheme: light) {
   :root {
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
@@ -58,6 +59,7 @@
   font-weight: normal;
 }
 
+/* TODO: Change font family */
 body {
   min-height: 100vh;
   color: var(--color-text);
