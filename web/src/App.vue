@@ -30,20 +30,21 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  text-align: center;
-  align-items: center;
   background-color: var(--color-background);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
 .header-content {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav {
@@ -70,7 +71,7 @@ main {
   padding: 2rem;
   max-width: 1200px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-top: 60px; /* Adjust this value based on your header height */
 }
 </style>

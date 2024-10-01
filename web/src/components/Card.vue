@@ -27,8 +27,8 @@ const flipped = ref(false)
   --card-text-color: var(--color-text);
   --card-border-color: var(--color-text);
 
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   perspective: 1000px;
   user-select: none;
   cursor: pointer;
