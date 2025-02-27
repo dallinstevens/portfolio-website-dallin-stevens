@@ -20,7 +20,7 @@ const router = createRouter({
     },
     {
       path: '/certificates',
-      name: 'Certificates',
+      name: 'Certifications',
       component: CertView
     }
   ]

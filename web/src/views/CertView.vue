@@ -16,31 +16,31 @@ import Card from '@/components/Cert.vue'
 const cards = ref([
   {
     logo: '../src/assets/certs/aws-sap.png',
-    url: 'https://www.credly.com/badges/811ad247-ad2b-4c44-8978-62743fb8fb95'
+    url: 'https://www.credly.com/badges/811ad247-ad2b-4c44-8978-62743fb8fb95/public_url'
   },
   {
     logo: '../src/assets/certs/terraform-associate.png',
-    url: 'https://www.credly.com/earner/earned/badge/034e10dd-46e3-477c-b135-c7796b25b1ae'
+    url: 'https://www.credly.com/earner/earned/badge/034e10dd-46e3-477c-b135-c7796b25b1ae/public_url'
   },
   {
     logo: '../src/assets/certs/comptia-sec+.png',
-    url: 'https://www.credly.com/earner/earned/badge/320092f3-4e20-4901-be6a-6e075a102c0c'
+    url: 'https://www.credly.com/earner/earned/badge/320092f3-4e20-4901-be6a-6e075a102c0c/public_url'
   },
   {
     logo: '../src/assets/certs/azure-fundamentals.png',
-    url: 'https://learn.microsoft.com/en-us/users/dallinstevens-4460/credentials/e59a8ff14c285687'
+    url: 'https://learn.microsoft.com/en-us/users/dallinstevens-4460/credentials/e59a8ff14c285687/public_url'
   },
   {
     logo: '../src/assets/certs/google-cybersecurity.png',
-    url: 'https://www.credly.com/earner/earned/badge/9b693082-feaf-4159-8a0e-0a8497e4b9bc'
+    url: 'https://www.credly.com/earner/earned/badge/9b693082-feaf-4159-8a0e-0a8497e4b9bc/public_url'
   },
   {
     logo: '../src/assets/certs/aws-saa.png',
-    url: 'https://www.credly.com/earner/earned/badge/2f3f1496-6e84-4d6a-8439-1a852de4d8a5'
+    url: 'https://www.credly.com/earner/earned/badge/2f3f1496-6e84-4d6a-8439-1a852de4d8a5/public_url'
   },
   {
     logo: '../src/assets/certs/cybersecurity-dual.png',
-    url: 'https://www.credly.com/earner/earned/badge/320092f3-4e20-4901-be6a-6e075a102c0c'
+    url: 'https://www.credly.com/earner/earned/badge/320092f3-4e20-4901-be6a-6e075a102c0c/public_url'
   }
 ])
 </script>
@@ -51,6 +51,25 @@ const cards = ref([
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 16px;
+}
+
+/* Adjust for iPad view (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* Adjust for phone view */
+@media (max-width: 767px) {
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card-grid > *:nth-last-child(1):nth-child(3n + 1) {
